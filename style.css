@@ -1,0 +1,158 @@
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #fff;
+    /* border: 2px solid green; */
+    overflow-x: hidden;
+}
+
+.header{
+    display: flex;
+    /* width: 100%; */
+    padding: 10px 30px;
+    justify-content: space-between;
+    /* border: 2px solid aqua; */
+    flex-wrap: wrap;
+}
+
+.navBar{
+    display: flex;
+    justify-content: center;
+}
+
+
+.navlink{
+    display: flex;
+    padding: 0 30px;
+    gap: 10px;
+
+}
+
+.loginBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-right: 50px;
+    /* border: 2px solid red; */
+}
+
+.loginBtn > button{
+    font-size: .8em;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid gray;
+}
+
+.icon-menu{
+    display:none;
+}
+
+.mobileImg{
+    display: none;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin:0 6rem ;
+    /* border: 2px solid blue; */
+}
+
+.content .left-section{
+    /* border: 2px solid red; */
+    padding: 30px;
+    /* width: 100%; */
+}
+
+.left-section h1{
+    font-size: 3.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.left-section p{
+    font-size: 1rem;
+    padding-bottom: 20px;
+}
+
+.left-section button{
+    background-color: #000;
+    color: #fff;
+    height: 30px;
+    border-radius: 7px;
+}
+
+.content .right-section{
+    /* border: 2px solid yellow; */
+    /* width: 100%; */
+}
+
+.betaImg{
+    display: flex;
+    margin-top:50px;
+    gap: 20px;
+    height: 20px;
+
+}
+
+
+@media screen and (max-width:800px) {
+    body{
+        /* background-color: blue; */
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .navlink, .loginBtn, .right-section{
+        display: none;
+    }
+    .icon-menu{
+        display: flex;
+        height: 20px;
+    }
+
+    .mobileImg{
+        display: flex;
+        width: 100%;
+    }
+
+    .content{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left-section{
+        width: 80%;
+        /* border: 2px solid red; */
+    }
+
+    .left-section h1{
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+    }
+br{
+    display: none;
+}
+
+    .left-section p{
+        font-size: small;
+    }
+
+    .right-section{
+        margin: 0;
+    }
+
+    .betaImg{
+        margin-top: 25px;
+        height: 20px;
+        gap: 10px;
+    }
+    
+}
